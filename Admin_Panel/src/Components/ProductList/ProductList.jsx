@@ -283,21 +283,17 @@ const ProductList = () => {
         >
           Previous
         </button>
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map(
-          (pageNumber) => (
-            <button
-              key={pageNumber}
-              onClick={() => handlePageClick(pageNumber)}
-              className={`px-4 py-2 border rounded-md mx-1 ${
-                currentPage === pageNumber
-                  ? "bg-blue-500 text-white"
-                  : "bg-gray-200"   
-              }`}
-            >
-              {pageNumber}
-            </button>
-          )
-        )}
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNumber) => (
+          <button
+            key={pageNumber}
+            onClick={() => handlePageClick(pageNumber)}
+            className={`px-4 py-2 border rounded-md mx-1 ${
+              currentPage === pageNumber ? "bg-[#0E1534] text-white" : "bg-gray-200"
+            }`}
+          >
+            {pageNumber}
+          </button>
+        ))}
         <button
           onClick={handleNextPage}
           disabled={currentPage === totalPages}
