@@ -75,11 +75,11 @@ const ProductList = () => {
                 </span>
               </td>
               <td className="border border-gray-300 px-4 py-2 space-x-3">
-                <button className="px-2 py-1 bg-gray-200 rounded-md">
-                  Delete
+                <button className="px-3 py-1 bg-[#0e1534e2] text-white rounded-md">
+                <span className="bi bi-pencil mr-2"></span>Edit
                 </button>
-                <button className="px-2 py-1 bg-gray-200 rounded-md">
-                  Edit
+                <button className="px-2 py-1 bg-red-500 text-white rounded-md">
+                <span className="bi bi-trash mr"></span>
                 </button>
               </td>
             </tr>
