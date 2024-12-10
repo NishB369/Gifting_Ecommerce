@@ -7,26 +7,45 @@ const HeroSection = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    // speed: 200,
+    autoplaySpeed:2000,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay:true,
+    cssEase:'linear'
   };
   return (
-    <div className="my-10">
-    <Slider {...settings}>
-      <div >
-        <img className="w-full h-72 object-cover " src="https://giftcart.com/cdn/shop/files/Uniquely_yours_Mobile_Size_Banner.webp?v=1686218661&width=3000" alt="" />
+    <div className="my-10 w-full">
+      <Slider {...settings}>
+        <div>
+          <img
+            className="w-[100%] h-96 object-cover object-center flex items-center justify-center p-4 rounded-3xl"
+            src="/car01.jpg"
+            alt=""
+          />
         </div>
         <div>
-        <img className="w-full h-72 object-cover " src="https://giftcart.com/cdn/shop/files/Mobile_Christmas_Banner.webp?v=1670324436&width=1200" alt="" />
+          <img
+            className="w-[100%] h-96 object-cover object-center flex items-center justify-center p-4 rounded-3xl"
+            src="/car02.jpg"
+            alt=""
+          />
         </div>
         <div>
-        <img className="w-full h-72 object-cover " src="https://giftcart.com/cdn/shop/files/Uniquely_yours_Mobile_Size_Banner.webp?v=1686218661&width=3000" alt="" />
+          <img
+            className="w-[100%] h-96 object-cover object-center flex items-center justify-center p-4 rounded-3xl"
+            src="/car03.jpg"
+            alt=""
+          />
         </div>
         <div>
-        <img className="w-full h-72 object-cover " src="https://giftcart.com/cdn/shop/files/Uniquely_yours_Mobile_Size_Banner.webp?v=1686218661&width=3000" alt="" />
-=        </div>
-    </Slider>
+          <img
+            className="w-[100%] h-96 object-cover object-center flex items-center justify-center p-4 rounded-3xl"
+            src="/car04.jpg"
+            alt=""
+          />
+        </div>
+      </Slider>
     </div>
   );
 };
