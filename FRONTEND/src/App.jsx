@@ -1,17 +1,17 @@
-import React from 'react'
-import HeroSection from './Components/HeroSection/HeroSection'
-import Navbar from './Components/Navbar/Navbar'
-import Collections from './Components/Collections/Collections'
-import Support from './Components/Support/Support'
+import React from "react";
+import {Routes, Route} from "react-router-dom"
+import Home from "../src/Page/Home.jsx"
+import Cart from "./Components/Cart/Cart.jsx"
 
 const App = () => {
   return (
     <div>
-      <Navbar/>
-     <Collections/>
-    <Support/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Cart" element={<Cart/>}/>
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
