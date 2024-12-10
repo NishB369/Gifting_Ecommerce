@@ -1,21 +1,23 @@
 export const SidebarData = [
     {
-        name: 'Hello',
+        name: 'Dashboard',
+        icon:'bi bi-menu-button-wide'
     },
     {
-        name: 'Hello2',
-        
+        name: 'Products',
+        icon:'bi bi-cart-plus'
     },
     {
-        name: 'Hello3',
+        name: 'Categories',
+        icon:'bi bi-list'
     },
     {
-        name: 'Hello4',
+        name: 'Notifications',
+        icon:'bi bi-bell-fill'
     },
     {
-        name: 'Hello5',
+        name: 'Settings',
+        icon:'bi bi-gear-fill'
     },
-    {
-        name: 'Hello6',
-    },
+    
 ]
