@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { products } from "../../../public/assets/gifting_products";
 
 const ProductList = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10; 
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = products.slice(indexOfFirstItem, indexOfLastItem);
+
+  const totalPages = Math.ceil(products.length / itemsPerPage);
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) setCurrentPage((prev) => prev + 1);
+  };
+
+  const handlePreviousPage = () => {
+    if (currentPage > 1) setCurrentPage((prev) => prev - 1);
+  };
+
+  const handlePageClick = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   return (
     <div className="p-4 border-2 border-black/25 ml-6 rounded-xl mt-4 w-[80%]">
       <div className="flex justify-between items-center mb-4 ">
@@ -41,7 +61,7 @@ const ProductList = () => {
           </tr>
         </thead>
         <tbody>
-          {products.map((product, index) => (
+          {currentItems.map((product, index) => (
             <tr key={index} className="hover:bg-gray-50">
               <td className="border border-gray-300 px-4 py-2">
                 <input type="checkbox" />
@@ -86,6 +106,35 @@ const ProductList = () => {
           ))}
         </tbody>
       </table>
+
+      {/* Pagination Controls */}
+      <div className="flex justify-center mt-4">
+        <button
+          onClick={handlePreviousPage}
+          disabled={currentPage === 1}
+          className="px-4 py-2 border rounded-md bg-gray-200 mx-2 disabled:opacity-50"
+        >
+          Previous
+        </button>
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNumber) => (
+          <button
+            key={pageNumber}
+            onClick={() => handlePageClick(pageNumber)}
+            className={`px-4 py-2 border rounded-md mx-1 ${
+              currentPage === pageNumber ? "bg-blue-500 text-white" : "bg-gray-200"
+            }`}
+          >
+            {pageNumber}
+          </button>
+        ))}
+        <button
+          onClick={handleNextPage}
+          disabled={currentPage === totalPages}
+          className="px-4 py-2 border rounded-md bg-gray-200 mx-2 disabled:opacity-50"
+        >
+          Next
+        </button>
+      </div>
     </div>
   );
 };
