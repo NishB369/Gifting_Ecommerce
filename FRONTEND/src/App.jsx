@@ -8,8 +8,7 @@ const App = () => {
   return (
     <div>
       <Navbar/>
-    <HeroSection/>
-    <Collections/>
+     <Collections/>
     <Support/>
     </div>
   )
