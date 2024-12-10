@@ -1,10 +1,15 @@
-import React from 'react'
-import Sidebar from './Components/Sidebar/Sidebar.jsx'
+// import React from 'react'
+import React from "react"
+import Header from './Components/Header/Header.jsx'
+
 
 const App = () => {
   return (
     <div>
-      <Sidebar/>
+      {/* <h1 className="text-3xl font-bold underline">
+      Hello!
+    </h1> */}
+    <Header />
     </div>
   )
 }
