@@ -23,7 +23,7 @@ const ProductList = () => {
   };
 
   return (
-    <div className="p-4 border-2 border-black/25 ml-6 rounded-xl mt-4 w-[80%]">
+    <div className="p-4 border-2 border-black/25 ml-56 rounded-xl mt-24 w-[80%] ">
       <div className="flex justify-between items-center mb-4 ">
         <h1 className="text-xl font-bold">Products List</h1>
         <div className="flex gap-4">
@@ -107,7 +107,6 @@ const ProductList = () => {
         </tbody>
       </table>
 
-      {/* Pagination Controls */}
       <div className="flex justify-center mt-4">
         <button
           onClick={handlePreviousPage}
@@ -121,7 +120,7 @@ const ProductList = () => {
             key={pageNumber}
             onClick={() => handlePageClick(pageNumber)}
             className={`px-4 py-2 border rounded-md mx-1 ${
-              currentPage === pageNumber ? "bg-blue-500 text-white" : "bg-gray-200"
+              currentPage === pageNumber ? "bg-[#0E1534] text-white" : "bg-gray-200"
             }`}
           >
             {pageNumber}
