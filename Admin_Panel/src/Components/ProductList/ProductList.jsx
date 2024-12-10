@@ -3,13 +3,13 @@ import { products } from "../../../public/assets/gifting_products";
 
 const ProductList = () => {
   return (
-    <div className="p-4 border border-gray-300  mx-10 rounded-3xl">
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-lg font-bold">Products List</h1>
+    <div className="p-4 border-2 border-black/25 ml-6 rounded-xl mt-4 w-[80%]">
+      <div className="flex justify-between items-center mb-4 ">
+        <h1 className="text-xl font-bold">Products List</h1>
         <div className="flex gap-4">
-          <button className="px-4 py-2 bg-gray-200 rounded-md">Filter</button>
-          <button className="px-4 py-2 bg-blue-500 text-white rounded-md">
-            Add Product
+          <button className="px-4 py-2 bg-gray-200 rounded-md"><span className="bi bi-filter mr-2"></span>Filter</button>
+          <button className="px-4 py-2 bg-[#0E1534] text-white rounded-md">
+          <span className="bi bi-plus-circle mr-2"></span>Add Product
           </button>
         </div>
       </div>

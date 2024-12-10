@@ -3,7 +3,7 @@ import { SidebarData } from "/public/assets/assets.js";
 
 const Sidebar = () => {
   return (
-    <div className="w-48 h-full text-black p-4 bg-[#F6F6F6] border-r-black/25 border-r-2">
+    <div className="w-48 text-black p-4 bg-[#F6F6F6] border-r-black/25 border-r-2">
       <div className="flex flex-col gap-2 px-2 py-4">
         {SidebarData.map((item, index) => (
           <div
