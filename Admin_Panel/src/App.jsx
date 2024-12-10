@@ -1,6 +1,7 @@
 // import React from 'react'
 import React from "react"
 import Header from './Components/Header/Header.jsx'
+import Sidebar from './Components/Sidebar/Sidebar.jsx'
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       Hello!
     </h1> */}
     <Header />
+    <Sidebar/>
     </div>
   )
 }
