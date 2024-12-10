@@ -1,4 +1,4 @@
-[
+export const products=[
     {
         "productName": "Gift Box 12",
         "category": "Gift Hampers",
