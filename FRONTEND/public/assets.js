@@ -1,33 +1,30 @@
-export const cartData= [
+export const cartData = [
   {
-    "productImage": "https://example.com/products/shoes.jpg",
-    "productName": "Running Shoes",
-    "productPrice": 49.99,
-    "productStock": 25,
-    "category": "Footwear"
+    productImage: "/car01.jpg",
+    productName: "Running Shoes",
+    productPrice: 49.99,
+    productStock: 25,
+    category: "Footwear",
+    productLink: "https://www.google.com",
   },
   {
-    "productImage": "https://example.com/products/headphones.jpg",
-    "productName": "Wireless Headphones",
-    "productPrice": 99.99,
-    "productStock": 15,
-    "category": "Electronics"
+    productImage: "/car02.jpg",
+    productName: "Wireless Headphones",
+    productPrice: 99.99,
+    productStock: 15,
+    category: "Electronics",
+    productLink: "https://www.google.com",
   },
   {
-    "productImage": "https://example.com/products/backpack.jpg",
-    "productName": "Travel Backpack",
-    "productPrice": 29.99,
-    "productStock": 40,
-    "category": "Accessories"
+    productImage: "/car03.jpg",
+    productName: "Travel Backpack",
+    productPrice: 29.99,
+    productStock: 40,
+    category: "Accessories",
+    productLink: "https://www.google.com",
   },
-  // {
-  //   "productImage": "https://example.com/products/laptop.jpg",
-  //   "productName": "Gaming Laptop",
-  //   "productPrice": 999.99,
-  //   "productStock": 10,
-  //   "category": "Computers"
-  // },
-]
+];
+
 
 const products = [
     {
